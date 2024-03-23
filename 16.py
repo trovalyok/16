@@ -116,3 +116,23 @@ class Robot:
                 self.position_x += number_of_steps
         else:
             raise ValueError('The number_of_steps is entered incorrectly.')
+
+
+robot = Robot('up', 1, 4)
+print(robot.display_position)
+robot.turn('left')
+print(robot.display_position)
+robot.move(3)
+print(robot.display_position)
+robot.turn('left')
+print(robot.display_position)
+robot.move(4)
+print(robot.display_position)
+robot.turn('left')
+print(robot.display_position)
+robot.move(2)
+print(robot.display_position)
+robot.turn('right')
+print(robot.display_position)
+robot.move(5)
+print(robot.display_position)
